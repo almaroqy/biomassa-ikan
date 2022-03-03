@@ -1,0 +1,604 @@
+
+/*LOGIN*/
+#bg-login{
+    background-image: url(../img/beach.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.login{
+    width: 400px;
+    padding: 1px;
+    position: absolute;
+    top: 25%;
+    bottom: 50%;
+    transform: translate(110%, -50%);
+    text-align: center;
+    color: rgb(0, 0, 0);
+    
+    
+    
+}
+.login h2{
+    text-align: center;
+    font-size: 78px;
+    margin-bottom: 70px;
+    font-family: 'Times New Roman';
+    
+}
+.login input{
+    border: 0;
+    background: #ffffff;
+    display: block;
+    margin: 30px auto;
+    text-align: left;
+    border: 3px solid: steelblue;
+    padding: 14px 10px;
+    width: 250px;
+    outline: #0603ca;
+    color: black;
+    border-radius: 24px;;
+    transition: 0.25s;
+    font-family: 'roboto';
+}
+.login input:hover{
+    border: 0;
+    background: #ffffff;
+    display: block;
+    margin: 30px auto;
+    text-align: left;
+    border: 3px solid: steelblue;
+    padding: 14px 10px;
+    width: 280px;
+    outline: #0603ca;
+    color: black;
+    border-radius: 24px;;
+    transition: 0.25s;
+    font-family: 'roboto';
+}
+.login button{
+    border: 0;
+    background:#26B3F0;
+    font-weight: bold;
+    font-size:x-large;
+    margin: 7px auto;
+    text-align: center;
+    border: 2px solid: steelblue;
+    padding: 10px 70px;
+    outline: #0603ca;
+    color: #fff;;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    font-family: 'roboto';
+}
+.login button:hover{
+    background:#ffffff ;
+    color: black;
+}
+.login a{
+    margin: 20px;
+    display:inline-block;
+    font-size: 14px;
+    text-decoration: none;
+    color: #ffffff  ;
+    
+}
+.login a:hover{
+    text-decoration: underline;
+    color: aqua;
+}
+
+
+/* SIGN UP */
+#bg-signup{
+    background-image: url(../img/beach.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.signup{
+    width: 480px;
+    padding: 1px;
+    position: absolute;
+    top: 23%;
+    bottom: 50%;
+    transform: translate(110%, -50%);
+    text-align: center;
+}
+.signup h1{
+    text-align: center;
+    font-size: 56px;
+    margin-bottom: 31px;
+    color: rgb(0, 0, 0);
+    font-family: 'Times New Roman';
+}
+.signup h4{
+    text-align: left;
+    padding-left: 106px;
+    color: black;
+}
+.signup input{
+    border: 0;
+    background: #ffffff;
+    display: block;
+    margin: 10px auto;
+    text-align:left;
+    border: 3px solid: steelblue;
+    padding: 14px 25px;
+    width: 250px;
+    outline: #0603ca;
+    color: black;
+    transition: 0.25s;
+    font-family: 'roboto';
+}
+
+.signup button{
+    border: 0;
+    background:#26B3F0;
+    font-weight: bold;
+    font-size:x-large;
+    margin: 7px auto;
+    text-align: center;
+    border: 2px solid: steelblue;
+    padding: 14px 40px;
+    outline: #0603ca;
+    color: #fff;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    font-family: 'roboto';
+}
+.signup button:hover{
+    background-color: white;
+    color: black;
+}
+
+
+/* LUPA PASSWORD */
+#bg-forget{
+    background-image: url(../img/beach.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.forget{
+    width: 480px;
+    padding: 1px;
+    position: absolute;
+    top: 21%;
+    bottom: 50%;
+    transform: translate(110%, -50%);
+    text-align: center;
+    color: white;
+}
+.forget h2{
+    text-align: center;
+    font-size: 56px;
+    margin-bottom: 31px;
+    color: rgb(0, 0, 0);
+    font-family: 'Times New Roman';
+}
+.forget input{
+    border: 0;
+    background: #ffffff;
+    display: block;
+    margin: 30px auto;
+    text-align:left;
+    border: 3px solid: steelblue;
+    padding: 14px 25px;
+    width: 250px;
+    outline: #0603ca;
+    color: black;
+    border-radius: 24px;;
+    transition: 0.25s;
+    font-family: 'roboto';
+}
+.forget input:hover{
+    border: 0;
+    background: #ffffff;
+    display: block;
+    margin: 30px auto;
+    text-align:left;
+    border: 3px solid: steelblue;
+    padding: 14px 25px;
+    width: 280px;
+    outline: #0603ca;
+    color: black;
+    border-radius: 24px;;
+    transition: 0.25s;
+    font-family: 'roboto';
+}
+.forget button{
+    border: 0;
+    background:#26B3F0;
+    font-weight: bold;
+    font-size:x-large;
+    margin: 10px auto;
+    text-align: center;
+    border: 2px solid: steelblue;
+    padding: 14px 40px;
+    outline: #0603ca;
+    color: #fff;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    font-family: 'roboto';
+}
+.forget button:hover{
+    background-color: white;
+    color: black;
+}
+
+/*NAVIGASI*/
+.nv{
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    position:fixed;
+    background-color: #3C8D9E;
+    
+}
+.nv h1 a{
+    padding-top: 1%;
+    padding-left: 1%;
+    text-decoration:none;
+    color: rgb(255, 255, 255);
+    float: left;
+    
+}
+.nv ul{
+    float: right;
+    
+}
+.nv ul li{
+    display: inline-block;
+    margin: 20px;
+    
+}
+.nv ul li a{
+    display: inline-block;
+    text-decoration:none;
+    color: white;
+}
+.nv ul li a:hover{
+    color:aqua;
+}
+.nv ul li a::after{
+    color:rgb(0, 0, 0);
+}
+
+
+
+/*HEADER VISITOR*/
+.wlc h1{
+    padding-top: 5%;
+    padding-bottom: 4%;
+    font-size: 50px;
+    text-align: center;
+    font-family: fantasy;
+    font-stretch: normal;
+    border: 20px;
+    color: #5291da;
+    
+}
+/* HEADER CONTENT */
+.wlc-bio h1{
+    
+    font-size: 90px;
+    text-align:left;
+    font-family: fantasy;
+    font-stretch: normal;
+    color: #5b7591;
+}
+/* BIOTA */
+.table{
+    text-align: center;
+}
+.nav-tb ul{
+    float: left;
+}
+.nav-tb ul li{
+    display: inline-block;
+    margin-right: 5px;
+}
+.nav-tb ul li a{
+    display: inline-block;
+    text-decoration:none;
+    color: #3C8D9E;
+}
+.nav-tb ul li a:hover{
+    text-decoration: underline;
+}
+
+/* PAKAN */
+
+
+/* KERAMBA */
+.wlc-ker p{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
+}
+
+/* PANEN */
+.img-feed img{
+   
+}
+.desc-position{
+    
+    
+}
+
+/* RIWAYAT */
+.wlc-rwyt h1{
+    font-size: 90px;
+    text-align:center;
+    font-family: fantasy;
+    font-stretch: normal;
+    color: #5b7591;
+}
+
+/* TAMBAH BIOTA */
+.tmbh-bio{
+    color: white;
+}
+.tmbh-bio input{
+    border: none;
+    background: #6EABB8;
+    display: block;
+    margin: 30px auto;
+    text-align: left;
+    outline-color: #26B3F0;
+    padding: 14px 10px;
+    width: 450px;
+    color: rgb(255, 255, 255);
+    border-radius: 24px;;
+    transition: 0.25s;
+    font-family: 'roboto';
+}
+.txt-plchd::-webkit-input-placeholder{
+    color: white;
+}
+.txt-plchd::-moz-input-placeholder{
+    color: white;
+}
+.txt-plchd::-ms-input-placeholder{
+    color: white;
+}
+.tmbh-bio button{
+    border: 0;
+    background:#26B3F0;
+    font-weight: bold;
+    font-size:x-large;
+    margin: 7px auto;
+    text-align: center;
+    padding: 10px 30px;
+    outline: #0603ca;
+    color: #fff;;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    font-family: 'roboto';
+}
+
+/* UBAH BIODATA */
+.ubh-bio{
+    color: white;
+}
+.ubh-bio input{
+    border: none;
+    background: #6EABB8;
+    display: block;
+    margin: 15px auto;
+    text-align: left;
+    outline-color: #26B3F0;
+    padding: 14px 10px;
+    width: 450px;
+    color: rgb(255, 255, 255);
+    border-radius: 24px;;
+    transition: 0.25s;
+    font-family: 'roboto';
+}
+.ubh-bio a{
+    display: inline-block;
+}
+.ubh-bio button{
+    border: 0;
+    background:#26B3F0;
+    font-weight: bold;
+    font-size:x-large;
+    margin: 35px auto;
+    text-align: center;
+    padding: 10px 30px;
+    outline: #0603ca;
+    color: #fff;;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    font-family: 'roboto';
+}
+
+/* UBAH KERAMBA */
+.ubh-keramba input{
+    border: none;
+    background: #6EABB8;
+    display: block;
+    margin: 15px auto;
+    text-align: left;
+    outline-color: #26B3F0;
+    padding: 14px 10px;
+    width: 450px;
+    color: rgb(255, 255, 255);
+    border-radius: 24px;;
+    transition: 0.25s;
+    font-family: 'roboto';
+}
+.ubh-keramba button{
+    border: 0;
+    background:#26B3F0;
+    font-weight: bold;
+    font-size:x-large;
+    margin: 35px auto;
+    text-align: center;
+    padding: 10px 30px;
+    outline: #0603ca;
+    color: #fff;;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    font-family: 'roboto';
+}
+
+/* TAMBAH PAKAN */
+.tmbh-pakan{
+    color: white;
+}
+.tmbh-pakan input{
+    border: none;
+    background: #6EABB8;
+    display: block;
+    margin: 35px auto;
+    text-align: left;
+    outline-color: #26B3F0;
+    padding: 14px 10px;
+    width: 450px;
+    color: rgb(255, 255, 255);
+    border-radius: 24px;;
+    transition: 0.25s;
+    font-family: 'roboto';
+}
+.tmbh-pakan textarea{
+    border: none;
+    background: #6EABB8;
+    display: block;
+    margin: 35px auto;
+    text-align: left;
+    outline-color: #26B3F0;
+    padding: 14px 10px;
+    width: 450px;
+    color: rgb(255, 255, 255);
+    border-radius: 24px;;
+    transition: 0.25s;
+    font-family: 'roboto';
+}
+.tmbh-pakan button{
+    border: 0;
+    background:#26B3F0;
+    font-weight: bold;
+    font-size:x-large;
+    margin: 35px auto;
+    text-align: center;
+    padding: 10px 30px;
+    outline: #0603ca;
+    color: #fff;;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    font-family: 'roboto';
+}
+
+/* UBAH PAKAN */
+.ubh-pakan{
+    color: white;
+}
+.ubh-pakan input{
+    border: none;
+    background: #6EABB8;
+    display: block;
+    margin: 15px auto;
+    text-align: left;
+    outline-color: #26B3F0;
+    padding: 14px 10px;
+    width: 450px;
+    color: rgb(255, 255, 255);
+    border-radius: 24px;;
+    transition: 0.25s;
+    font-family: 'roboto';
+}
+.ubh-pakan textarea{
+    border: none;
+    background: #6EABB8;
+    display: block;
+    margin: 20px auto;
+    text-align: left;
+    outline-color: #26B3F0;
+    padding: 14px 10px;
+    width: 450px;
+    color: rgb(255, 255, 255);
+    border-radius: 24px;;
+    transition: 0.25s;
+    font-family: 'roboto';
+}
+.ubh-pakan button{
+    border: 0;
+    background:#26B3F0;
+    font-weight: bold;
+    font-size:x-large;
+    margin: 35px auto;
+    text-align: center;
+    padding: 10px 30px;
+    outline: #0603ca;
+    color: #fff;;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    font-family: 'roboto';
+}
+
+/* PEMBERIAN PAKAN */
+.pemberian-pakan{
+    color: white;
+}
+.pemberian-pakan input{
+    border: none;
+    background: #6EABB8;
+    margin: 35px auto;
+    text-align: left;
+    outline-color: #26B3F0;
+    padding: 14px 10px;
+    width: 450px;
+    color: rgb(255, 255, 255);
+    border-radius: 24px;;
+    transition: 0.25s;
+    font-family: 'roboto';
+}
+.pemberian-pakan button{
+    border: 0;
+    background:#26B3F0;
+    font-weight: bold;
+    font-size:x-large;
+    margin: 35px auto;
+    text-align: center;
+    padding: 10px 30px;
+    outline: #0603ca;
+    color: rgb(255, 255, 255);;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    font-family: 'roboto';
+}
+
+/*FOOTER*/
+
+/* main DASHBOARD */
+.crop a{
+    text-decoration: none;
+    color: #000000;
+}
+.crop a:hover{
+    text-decoration: underline;
+}
+.fish a{
+    text-decoration: none;
+    color: black;
+}
+.fish a:hover{
+    text-decoration: underline;
+}
+.feed a{
+    text-decoration: none;
+    color: black;
+}
+.feed a:hover{
+    text-decoration: underline;
+}
+
+

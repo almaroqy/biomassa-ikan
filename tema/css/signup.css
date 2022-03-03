@@ -1,0 +1,82 @@
+/* SIGN UP */
+#bg-signup{
+    background-image: url(../img/beach.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.signup{
+    width: 480px;
+    padding: 1px;
+    position: absolute;
+    top: 23%;
+    bottom: 50%;
+    transform: translate(110%, -50%);
+    text-align: center;
+}
+.signup h1{
+    text-decoration: underline;
+    text-align: center;
+    font-size: 56px;
+    margin-bottom: 31px;
+    color: rgb(0, 0, 0);
+    font-family: 'Times New Roman';
+}
+.signup h4{
+    text-align: left;
+    padding-left: 106px;
+    color: black;
+}
+.signup input{
+    border: 0;
+    background: #ffffff;
+    display: block;
+    margin: 10px auto;
+    text-align:left;
+    border: 3px solid: steelblue;
+    padding: 14px 25px;
+    width: 250px;
+    outline: #0603ca;
+    color: black;
+    transition: 0.25s;
+    font-family: 'roboto';
+}
+
+.signup small{
+    font-family: 'roboto';
+    color: rgb(194, 19, 19);
+    border-top:#ffffff;
+    border-bottom:#ffffff ;
+    border-left: #ffffff;
+    border-right:#ffffff ;
+}
+
+.signup button{
+    border: 0;
+    background:#26B3F0;
+    font-weight: bold;
+    font-size:x-large;
+    margin: 7px auto;
+    text-align: center;
+    border: 2px solid: steelblue;
+    padding: 14px 40px;
+    outline: #0603ca;
+    color: #fff;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    font-family: 'roboto';
+}
+.signup button:hover{
+    background-color: white;
+    color: black;
+}
+.signup a{
+    margin: 20px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #000000  ;
+}
+.signup a:hover{
+    text-decoration: underline;
+    color: #0f8838;
+}

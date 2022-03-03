@@ -1,0 +1,47 @@
+/*NAVIGASI*/
+.nv{
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    position:fixed;
+    background-color: #3C8D9E;
+    
+}
+.nv h1 a{
+    padding-top: 1%;
+    padding-left: 1%;
+    text-decoration:none;
+    color: rgb(255, 255, 255);
+    float: left;
+    
+}
+.nv ul{
+    float: right;
+    
+}
+.nv ul li{
+    display: inline-block;
+    margin: 20px;
+    
+}
+.nv ul li a{
+    display: inline-block;
+    text-decoration:none;
+    color: white;
+}
+.nv ul li a:hover{
+    color:aqua;
+}
+.nv ul li a::after{
+    color:rgb(0, 0, 0);
+}
+
+/* HEADER CONTENT */
+.wlc-bio h1{
+    
+    font-size: 90px;
+    text-align:left;
+    font-family: fantasy;
+    font-stretch: normal;
+    color: #5b7591;
+}

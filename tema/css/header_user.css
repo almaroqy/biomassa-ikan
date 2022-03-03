@@ -1,0 +1,79 @@
+/*NAVIGASI*/
+.nv{
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    position:fixed;
+    background-color: #3C8D9E;
+    
+}
+.nv h1 a{
+    padding-top: 1%;
+    padding-left: 1%;
+    text-decoration:none;
+    color: rgb(255, 255, 255);
+    float: left;
+    
+}
+.nv ul{
+    float: right;
+    
+}
+.nv ul li{
+    display: inline-block;
+    margin: 20px;
+    
+}
+.nv ul li a{
+    display: inline-block;
+    text-decoration:none;
+    color: white;
+}
+.nv ul li a:hover{
+    color:aqua;
+}
+.nv ul li a::after{
+    color:rgb(0, 0, 0);
+}
+
+
+
+/*HEADER VISITOR*/
+.bg-body{
+    background-image: url(../img/sea.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.wlc h1{
+    padding-top: 5%;
+    padding-bottom: 4%;
+    font-size: 50px;
+    text-align: center;
+    font-family: fantasy;
+    font-stretch: normal;
+    border: 20px;
+    color: #5291da;
+    
+}
+/* main DASHBOARD */
+.crop a{
+    text-decoration: none;
+    color: #000000;
+}
+.crop a:hover{
+    text-decoration: underline;
+}
+.fish a{
+    text-decoration: none;
+    color: black;
+}
+.fish a:hover{
+    text-decoration: underline;
+}
+.feed a{
+    text-decoration: none;
+    color: black;
+}
+.feed a:hover{
+    text-decoration: underline;
+}
