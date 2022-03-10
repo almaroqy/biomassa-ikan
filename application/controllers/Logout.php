@@ -9,6 +9,6 @@ class Logout extends CI_Controller
     public function signout()
     {
         $this->session->sess_destroy();
-        redirect(base_url('homepage'));
+        redirect(base_url('login'));
     }
 }
