@@ -21,26 +21,7 @@
     <title>Panen</title>
 </head>
 
-<body style="background-color: azure;">
-    <nav class="sticky">
-        <div class="container">
-            <div class="row">
-                <div class="col py-2">
-                    <div class="nv">
-                        <h1><a href="<?php echo base_url(); ?>user">NAMA APLIKASI</a></h1>
-                        <ul>
-                            <li><a href="<?php echo base_url(); ?>user">Dashboard</a></li>
-                            <li><a href="<?php echo base_url(); ?>biota">Biota</a></li>
-                            <li><a href="<?php echo base_url(); ?>pakan">Pakan</a></li>
-                            <li><a href="<?php echo base_url(); ?>keramba">Keramba</a></li>
-                            <li><a href="<?php echo base_url(); ?>panen">Panen</a></li>
-                            <li><a href="<?php echo base_url(); ?>logout">log Out</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </nav>
+<body>
 
     <header>
         <div class="container">
@@ -52,6 +33,7 @@
                     <div class="bg-wlc">
                         <div class="wlc-bio">
                             <h1>PANEN</h1>
+                            <?= $this->session->flashdata('message'); ?>
                         </div>
                     </div>
                 </div>
@@ -62,16 +44,25 @@
 
     <main class="container"><br>
         <div class="row">
-            <div class="col-md-12 py-5">
-
+            <div class="col-md-12">
+                <div class="nav-tb">
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
                 <div class="table">
                     <table class="table table-bordered table-striped">
                         <thead>
                             <tr>
                                 <th>No</th>
-
+                                <th>Biota ID</th>
                                 <th>Tanggal Panen</th>
-
+                                <th>Panjang Ikan</th>
+                                <th>Bobot Ikan</th>
+                                <th>Jumlah Hidup</th>
+                                <th>Jumlah Mati</th>
+                                <th>Keramba ID</th>
+                                <th>Action</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -81,9 +72,18 @@
                             ?>
                                 <tr>
                                     <td><?= $no++ ?></td>
-
+                                    <td><?= $pan->biota_id ?></td>
                                     <td><?= $pan->tanggal_panen ?></td>
-
+                                    <td><?= $pan->panjang ?>mm</td>
+                                    <td><?= $pan->bobot ?>g</td>
+                                    <td><?= $pan->jumlah_hidup ?></td>
+                                    <td><?= $pan->jumlah_mati ?></td>
+                                    <td><?= $pan->keramba_id ?></td>
+                                    <td>
+                                        <a class = "btn btn-success" href="<?php echo base_url(); ?>tambahbiota">Add</a>
+                                        <a class="btn btn-warning" <?php echo anchor('panen/edit/' . $pan->biota_id, 'Edit'); ?> </a>
+                                        <a class="btn btn-danger" onclick="return confirm ('Apakah Anda Yakin Ingin Menghapus?')" <?php echo anchor('biota/hapus/' . $pan->biota_id, 'Delete'); ?> </a>
+                                    </td>
                                 </tr>
                             <?php } ?>
 

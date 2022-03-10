@@ -57,7 +57,7 @@
             <div class="col-md-8 py-5">
                 <h1 class="crop"><a href="<?php echo base_url(); ?>panen">Hasil Monitoring Biomassa Ikan
                         Pada Bulan September</a></h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad reprehenderit libero unde ullam ducimus sunt, saepe fugit animi accusamus accusantium excepturi corrupti aut tenetur? Cumque quasi ratione ipsam facere quod?</p>
+                <p>Pada bulan september hasil menunjukan bahwa ikan mengalami pertumbuhan yang pesat dibandingkan dengan bulan juni. Faktor pakan memungkinkan ikan untuk tumbuh lebih cepat.</p>
             </div>
         </div>
         <div class="row">
@@ -67,7 +67,7 @@
             <div class="col-md-8 py-5">
                 <h1 class="fish"><a href="<?php echo base_url(); ?>keramba">Jenis ikan yang sedang dibudidayakan
                         pada KJABB</a></h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad reprehenderit libero unde ullam ducimus sunt, saepe fugit animi accusamus accusantium excepturi corrupti aut tenetur? Cumque quasi ratione ipsam facere quod?</p>
+                <p>Pada keramba KJABB Karimunjawa terdapat satu biota yaitu kerapu macan. Yang mana umurnya masih dua bulan.</p>
             </div>
         </div>
         <div class="row">
@@ -77,7 +77,7 @@
             <div class="col-md-8 py-5">
                 <h1 class="feed"><a href="<?php echo base_url(); ?>pakan">Informasi Pakan Pada budidaya
                         ikan di KJABB</a></h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad reprehenderit libero unde ullam ducimus sunt, saepe fugit animi accusamus accusantium excepturi corrupti aut tenetur? Cumque quasi ratione ipsam facere quod?</p>
+                <p>Pakan yang digunakan di budidaya Kermba Jaring Apung Bulat Bertingkat (KJABB) ini merupakan pakan jenis runcah dan pelet. Pakan pelet merupakan pakan kualitas baik begitu juga dengan pakan runcah yang diambil dari potonga-potinga ikan segar </p>
             </div>
         </div>
     </main>

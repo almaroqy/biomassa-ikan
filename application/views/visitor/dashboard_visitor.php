@@ -20,26 +20,7 @@
     <title>Dashboard</title>
 </head>
 
-<body class="bg-body">
-    <nav class="sticky">
-        <div class="container">
-            <div class="row">
-                <div class="col py-2">
-                    <div class="nv">
-                        <h1><a href="<?php echo base_url(); ?>user">NAMA APLIKASI</a></h1>
-                        <ul>
-                            <li><a href="<?php echo base_url(); ?>homepage">Dashboard</a></li>
-                            <li><a href="<?php echo base_url(); ?>login">Biota</a></li>
-                            <li><a href="<?php echo base_url(); ?>login">Pakan</a></li>
-                            <li><a href="<?php echo base_url(); ?>login">Keramba</a></li>
-                            <li><a href="<?php echo base_url(); ?>login">Panen</a></li>
-                            <li><a href="<?php echo base_url(); ?>login">log In</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </nav>
+<body>
 
     <header>
         <div class="container">

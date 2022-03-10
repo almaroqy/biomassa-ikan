@@ -11,5 +11,6 @@ class Panen extends CI_Controller
     {
         $data['panen'] = $this->m_panen->tampil_data()->result();
         $this->load->view('user/panen', $data);
+        $this->load->view('lib/header', $data);
     }
 }

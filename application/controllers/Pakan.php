@@ -5,12 +5,14 @@ class Pakan extends CI_Controller
     {
         parent::__construct();
         $this->load->model('m_pakan');
+        $this->load->view('lib/header');
     }
 
     public function index()
     {
         $data['pakan'] = $this->m_pakan->tampil_data()->result();
         $this->load->view('user/pakan', $data);
+        $this->load->view('lib/footer');
     }
 
     public function hapus($pakan_id)
@@ -19,6 +21,7 @@ class Pakan extends CI_Controller
         $where = array('pakan_id' => $pakan_id);
         $this->m_pakan->hapus_data($where, 'pakan');
         redirect('pakan');
+        $this->load->view('lib/footer');
     }
 
     public function edit($pakan_id)
@@ -26,6 +29,7 @@ class Pakan extends CI_Controller
         $where = array('pakan_id' => $pakan_id);
         $data['pakan'] = $this->m_pakan->edit_data($where, 'pakan')->result();
         $this->load->view('user/ubah_pakan', $data);
+        $this->load->view('lib/footer');
     }
 
     public function update()
@@ -45,5 +49,6 @@ class Pakan extends CI_Controller
 
         $this->m_pakan->update_data($where, $data, 'pakan');
         redirect('pakan');
+        $this->load->view('lib/footer');
     }
 }
