@@ -81,7 +81,7 @@
                                 <div class="col-md-6" style="margin-left: 2%;">
                                     <h6>Tanggal Install:</h6>
                                 </div>
-                                <input type="date" name="tggl-install" id="tggl-install" class="txt-plchd" placeholder="Tanggal Install" value="<?= $ker->tanggal_install ?> ">
+                                <input type="date" name="tggl-install" class="txt-plchd" placeholder="Tanggal Install" value="<?= $ker->tanggal_install ?> ">
                                 <small>
                                     <?= form_error('tggl-install') ?>
                                 </small>

@@ -85,12 +85,12 @@
                                 <div class="col-md-6" style="margin-left: 2%;">
                                     <h6>Tanggal Tebar:</h6>
                                 </div>
-                                <input type="text" name="tggl-tbr" class="txt-plchd" placeholder="Tanggal Tebar" value="<?= $bio->tanggal_tebar ?>">
+                                <input type="date" name="tggl-tbr" class="txt-plchd" placeholder="Tanggal Tebar" value="<?= $bio->tanggal_tebar ?>">
 
                                 <div class="col-md-6" style="margin-left: 2%;">
                                     <h6>Tanggal Panen:</h6>
                                 </div>
-                                <input type="text" name="tggl-panen" class="txt-plchd" placeholder="Tanggal Panen" value="<?= $bio->tanggal_panen ?>">
+                                <input type="date" name="tggl-panen" class="txt-plchd" placeholder="Tanggal Panen" value="<?= $bio->tanggal_panen ?>">
                                 
                                 <div class="col-md-6" style="margin-left: 7%;">
                                     <h6>ID Asal keramba:</h6>

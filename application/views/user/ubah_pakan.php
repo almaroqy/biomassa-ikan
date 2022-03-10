@@ -78,15 +78,12 @@
                                     <?= form_error('nama-ker') ?>
                                 </small><br>
                                 
-                                <div class="col-md-6" style="margin-left: 10%;">
-                                    <h6>ID yang menambahkan pakan:</h6>
-                                </div>
-                                <input type="text" name="id-user-pakan" id="id-user-pakan" class="txt-plchd" placeholder="ID yang menambahkan pakan" value="<?= $pak->user_id ?> ">
+                                <input type="hidden" name="id-user-pakan" id="id-user-pakan" class="txt-plchd" placeholder="ID yang menambahkan pakan" value="<?= $pak->user_id ?> ">
                                 <small>
                                     <?= form_error('id-user-pakan') ?>
                                 </small>
 
-                                <button type="submit" name="tambah">Tambah</button>
+                                <button type="submit" name="tambah">Update</button>
                             </form>
                         <?php } ?>
                     </div>

@@ -34,17 +34,14 @@ class Pakan extends CI_Controller
 
     public function update()
     {
-        $pakan_id = $this->input->post('pak-id');
-        $nama_pak = $this->input->post('nama-pak');
-        $deskripsi = $this->input->post('deskripsi');
-
-        $data = array(
-            'nama' => $nama_pak,
-            'deskripsi' => $deskripsi
-        );
+        $data = [
+            'jenis_pakan' => htmlspecialchars($this->input->post('nama-pak', true)),
+            'deskripsi' => htmlspecialchars($this->input->post('deskripsi', true)),
+            'user_id' => htmlspecialchars($this->input->post('id-user-pakan', true))
+            ];
 
         $where = array(
-            'pakan_id' => $pakan_id
+            'pakan_id' => htmlspecialchars($this->input->post('pak-id', true))
         );
 
         $this->m_pakan->update_data($where, $data, 'pakan');

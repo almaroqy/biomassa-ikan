@@ -34,20 +34,14 @@ class Keramba extends CI_Controller
 
     public function update()
     {
-        $keramba_id = $this->input->post('ker-id');
-        $nama_ker = $this->input->post('nama-ker');
-        $ukuran = $this->input->post('ukuran');
-        $tggl_install = $this->input->post('tggl-install');
-
-        $data = array(
-            'nama' => $nama_ker,
-            'ukuran' => $ukuran,
-            'tanggal_install' => $tggl_install,
-            'user_id' => htmlspecialchars($this->db->insert('user', 'user_id'))
-        );
+        $data = [
+            'nama' => htmlspecialchars($this->input->post('nama-ker', true)),
+            'ukuran' => htmlspecialchars($this->input->post('ukuran', true)),
+            'tanggal_install' => htmlspecialchars($this->input->post('tggl-install', true))
+            ];
 
         $where = array(
-            'keramba_id' => $keramba_id
+            'keramba_id' => htmlspecialchars($this->input->post('ker-id', true)),
         );
 
         $this->m_keramba->update_data($where, $data, 'keramba');

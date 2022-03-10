@@ -5,6 +5,7 @@ class Biota extends CI_Controller
     {
         parent::__construct();
         $this->load->model('m_biota');
+		$this->load->helper('url');
         $this->load->view('lib/header');
         
     }
@@ -35,26 +36,18 @@ class Biota extends CI_Controller
 
     public function update()
     {
-        $biota_id = $this->input->post('biota_id');
-        $jenis = $this->input->post('jenis');
-        $bobot = $this->input->post('bobot');
-        $jumlah = $this->input->post('jumlah');
-        $panjang = $this->input->post('panjang');
-        $tggl_tbr = $this->input->post('tggl_tbr');
-        $tggl_panen = $this->input->post('tggl_panen');
-
-        $data = array(
-            'jenis_biota' => $jenis,
-            'bobot' => $bobot,
-            'panjang' => $panjang,
-            'jumlah_bibit' => $jumlah,
-            'tanggal_tebar' => $tggl_tbr,
-            'tanggal_panen' => $tggl_panen,
-            'keramba_id' => htmlspecialchars($this->input->post('asl-keramba'))
-        );
+        $data = [
+            'jenis_biota' => htmlspecialchars($this->input->post('jenis', true)),
+            'bobot' => htmlspecialchars($this->input->post('bobot', true)),
+            'jumlah_bibit' => htmlspecialchars($this->input->post('jumlah', true)),
+            'panjang' => htmlspecialchars($this->input->post('panjang', true)),
+            'tanggal_tebar' => htmlspecialchars($this->input->post('tggl-tbr', true)),
+            'tanggal_panen' => htmlspecialchars($this->input->post('tggl-panen', true)),
+            'keramba_id' => htmlspecialchars($this->input->post('asl-keramba', true))
+            ];
 
         $where = array(
-            'biota_id' => $biota_id
+            'biota_id' => htmlspecialchars($this->input->post('biota_id', true))
         );
 
         $this->m_biota->update_data($where, $data, 'biota');
